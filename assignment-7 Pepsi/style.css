@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "Sofia";
+    src: url(Sofia-Pro-Medium.ttf);
+}
+body{
+    background-color: #003fd0;
+}
+.navbar{
+    background-color: #0065c3;
+}
+.nav-item{
+    margin-right: 1.5rem;
+    font-family:  Sofia Pro black;
+    font-size: 0.76rem;
+    cursor: pointer;
+    padding: 20px 0px;
+    
+}
+.nav-item>a{
+    color:#fff;
+    font-family: Sofia, sans-serif;
+    font-weight: 800;
+}
+.navbar-brand{
+    margin-right: 50px;
+}
+.pepsi-btn{
+    font-size: 0.7em;
+    padding: 5px 20px;
+    border: 2px solid #fff;
+    border-radius: 1.8em;
+    background: transparent;
+    color: #fff;
+    font-family: Sofia Pro Black;
+    cursor: pointer;
+    font-weight: bold;
+}
+.pepsi-btn:hover{
+    background-color: #fff;
+    color: #0065c3;
+    -webkit-animation-name: jello;
+    animation-name: jello;
+}
+.logo:hover{
+    -webkit-animation-name: rotateIn;
+    animation-name: rotateIn;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    animation-duration: 0.4s;
+}
+
+@media only screen and (max-width: 992px) {
+    .nav-item{
+        text-align: center;
+    }
+    .pepsi-btn{
+        width: 100%;
+        align-items: center;
+    }
+
+}
