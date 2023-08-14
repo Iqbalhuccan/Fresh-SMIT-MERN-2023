@@ -15,6 +15,8 @@
 // alert("Happy Coding! \nPrevent this page from creating additional dialogs.")
 
 // Q # 5:
+// use script file above and belwo in the body. Use script file in the head section for the 
+// code execution. 
 
 // Q # 6:
 // use of alerts in your HTML file
@@ -158,7 +160,7 @@ var increment = initialNum++
 var addition = increment + 6
 var decrement = addition--
 var modulusNum = decrement % 2
-document.write("“Value after variable declaration is:" + "“Initial value: " + )
+document.write("“Value after variable declaration is:" + "“Initial value: " )
 
 //  Q # 4
 // var numOfTicket = 5

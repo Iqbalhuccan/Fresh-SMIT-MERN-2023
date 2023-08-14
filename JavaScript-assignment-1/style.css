@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(245, 230, 193);
+}
+h1{
+    color: white;
+    text-align: center;
+    background-color: rgb(113, 1, 1);
+    padding: 20px;
+}
+.questions{
+    background-color: rgb(178, 124, 118);
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.question1{
+    background-color: rgb(186, 179, 179);
+    width: 22%;
+    height: 400px;
+}
+.question2{
+    background-color: rgba(145, 140, 140, 0.562);
+    width: 18%;
+    height: 25vh;
+}
+.question3{
+    background-color: rgb(121, 119, 119);
+    width: 20%;
+    height: 35vh;
+}
+.question4{
+    background-color: rgb(193, 197, 192);
+    width: 21%;
+    height: 22vh;
+}
+.question5{
+    background-color: rgb(214, 213, 214);
+    width: 17%;
+    height: 27vh;
+}
