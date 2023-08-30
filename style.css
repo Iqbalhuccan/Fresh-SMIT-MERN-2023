@@ -27,6 +27,10 @@ h3{
     color: rgb(8, 58, 242);
     margin-left: 50px;
 }
+.js{
+    color: rgb(8, 58, 242);
+    margin-left: 50px;
+}
 .div1{
     background-color: rgba(225, 244, 233, 0.989);
     width: 300px;
@@ -59,6 +63,47 @@ h3{
     text-shadow: 2px 1px 3px rgb(156, 157, 159);
     box-shadow: 3px 2px 4px rgb(120, 120, 117);
 }
+.div4{
+    background-color: rgba(225, 244, 233, 0.989);
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 30px 20px 30px;
+    text-shadow: 2px 1px 3px rgb(156, 157, 159);
+    box-shadow: 3px 2px 4px rgb(120, 120, 117);
+}
+.div5{
+    background-color: rgba(225, 244, 233, 0.989);
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 30px 20px 30px;
+    text-shadow: 2px 1px 3px rgb(156, 157, 159);
+    box-shadow: 3px 2px 4px rgb(120, 120, 117);
+}
+.div6{
+    background-color: rgba(225, 244, 233, 0.989);
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 30px 20px 30px;
+    text-shadow: 2px 1px 3px rgb(156, 157, 159);
+    box-shadow: 3px 2px 4px rgb(120, 120, 117);
+}
+.div7{
+    background-color: rgba(225, 244, 233, 0.989);
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 20px 30px 20px 30px;
+    text-shadow: 2px 1px 3px rgb(156, 157, 159);
+    box-shadow: 3px 2px 4px rgb(120, 120, 117);
+}
+
 a{
     text-decoration: none;
 }

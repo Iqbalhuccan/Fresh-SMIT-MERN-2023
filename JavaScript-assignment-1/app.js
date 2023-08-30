@@ -155,12 +155,12 @@
 // document.write( "<br> Remainder of " + num1 + " and " + num2 + " is " + modulusNum);
 
 //  Q # 3
-var initialNum = 5
-var increment = initialNum++
-var addition = increment + 6
-var decrement = addition--
-var modulusNum = decrement % 2
-document.write("“Value after variable declaration is:" + "“Initial value: " )
+// var initialNum = 5
+// var increment = initialNum++
+// var addition = increment + 6
+// var decrement = addition--
+// var modulusNum = decrement % 2
+// document.write("“Value after variable declaration is:" + "“Initial value: " )
 
 //  Q # 4
 // var numOfTicket = 5
@@ -246,14 +246,14 @@ document.write("“Value after variable declaration is:" + "“Initial value: " 
 // " <br> The Area is: " + area)
 
 // Q # 13:
-var favSnack = "Lays"
-var currentAge = 24
-var maxAge = 50 
-var amountPerDay = 2
-var lifeTime = (maxAge - currentAge) * 365 * amountPerDay
-document.write("<h1> The Lifetime Supply Calculator</h1>" + "Favourite Snack: " + favSnack + "<br> Current Age: "
-+ currentAge + " <br> Estimated Maximum Age: " + maxAge + "<br> Amount of Snacks per day: " + amountPerDay + "<br><br>")
-document.write("You will need " + lifeTime + " " +favSnack + " to last you until the ripe old age of " + maxAge)
+// var favSnack = "Lays"
+// var currentAge = 24
+// var maxAge = 50 
+// var amountPerDay = 2
+// var lifeTime = (maxAge - currentAge) * 365 * amountPerDay
+// document.write("<h1> The Lifetime Supply Calculator</h1>" + "Favourite Snack: " + favSnack + "<br> Current Age: "
+// + currentAge + " <br> Estimated Maximum Age: " + maxAge + "<br> Amount of Snacks per day: " + amountPerDay + "<br><br>")
+// document.write("You will need " + lifeTime + " " +favSnack + " to last you until the ripe old age of " + maxAge)
 
 
 
