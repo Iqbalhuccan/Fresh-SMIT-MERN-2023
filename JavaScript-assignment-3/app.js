@@ -92,44 +92,7 @@
 
 
 
-                                        // class practice work
-
-// var numbers = [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 13];
-// for( var i= 0; i<numbers.length; i++){
-//         if( numbers[i + 1]-numbers[i] === 2){
-//         alert(numbers[i]+1)
-// }
-// }
-// var word= prompt("Enter your name")
-// var reverword = "";
-// for(var i = word.length -1; i>=0; i--){
-// }
-
-// var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-// var even= []
-// var odd= []
-// for(var i=0; i < numbers.length; i++){
-//         if(i % 2 === 0){
-//                 even.push(i + 2)
-//         }else{
-//                 odd.push(i)
-//         }
-// }
-// alert("Even Numbers: " + even)
-// alert("Odd Numbers: " + odd)
-
-
-var numbers = [1, 2, 3, 4, 10, 5, 6, 7, 8, 9]
-var number1 = numbers[0]
-for(var i=0; i < numbers.length; i++){
-        if(num[i] < (num[i] + 1) ){
-                
-        }else{
-                odd.push(i)
-        }
-}
-alert("Even Numbers: " + even)
-alert("Odd Numbers: " + odd)
+                                        
 
 
 
