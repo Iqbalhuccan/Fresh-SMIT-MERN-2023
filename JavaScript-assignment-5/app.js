@@ -61,6 +61,103 @@
 // }
 
 
+// JavaScript Assignment-5 
+// Chapter 31-34
+
+// Q # 1:
+// var date = new Date()
+// document.write(date)
+
+// Q # 2:
+// var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+// var now = new Date();
+// var theMonth = now.getMonth();
+// var nameOfMonth = monthNames[theMonth]
+// document.write("Current month: " + nameOfMonth)
+
+// Q # 3:
+// var dayNames= [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ];
+// var now = new Date();
+// var today = now.getDay();
+// var nameOfDay = dayNames[today]
+// document.write("Today is " + nameOfDay)
+
+// Q # 4:
+// var dayNames= [ 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat' ];
+// var now = new Date();
+// var today = now.getDay();
+// var nameOfDay = dayNames[today]
+// if(nameOfDay ===  "Sun" || nameOfDay === "Sat"){
+//     document.write("It's fun day.")
+// }
+// else{
+//     document.write("Today is " + nameOfDay)
+// }
+
+// Q # 5:
+// var day = new Date()
+// var numOfDays = day.getDate()
+// if (numOfDays <= 16) {
+//     document.write("“First fifteen days of the month”");
+// }else{
+//     document.write("“Last days of the month”")
+// }
+
+// Q # 6:
+// var now = new Date();
+// var msCurrent = now.getTime()
+// var mCurrent = msCurrent / (1000 * 60)
+// document.write("Current Date: " + now)
+// document.write("<br/>" + "Elapsed milliseconds since January 1, 1970: " + msCurrent + " milliseconds")
+// document.write("<br/>" + "Elapsed minutes since January 1, 1970: " + mCurrent.toFixed() + " minutes")
+
+// Q # 7:
+// var now = new Date();
+// var currentTime = now.getTime / (1000 * 60 * 60 * 24)
+// if( currentTime <= 12){
+//     alert("It's AM ")
+// }else{
+//     alert("It's PM")
+// }
+
+// Q # 8:
+// var laterDate = new Date(2020, 11, 31)
+// alert(laterDate)
+
+// Q # 9:
+// var today = new Date();
+// var firstRamadan = new Date("March 11, 2024");
+// var msToday = today.getTime();
+// var msFirstRamadan = firstRamadan.getTime();
+// var msDiff = msFirstRamadan - msToday
+// var dDiff = msDiff / (1000 * 60 * 60 * 24)
+// document.write(Math.floor(dDiff) + " days to Ramadan 2024<br/>");
+
+// var today = new Date();
+// var firstRamadan = new Date("March 22, 2023");
+// var msToday = today.getTime();
+// var msFirstRamadan = firstRamadan.getTime();
+// var msDiff = msToday - msFirstRamadan
+// var dDiff = msDiff / (1000 * 60 * 60 * 24)
+// document.write(Math.floor(dDiff) + " days have passed since 1st Ramadan 2023");
+
+// Q # 10:
+// var now = new Date();
+// var msNow = now.getTime();
+// var laterDate = new Date("June 10, 2023")
+// var msLaterDate = laterDate.getTime();
+// var msDiff = msNow - msLaterDate
+// var dDiff = msDiff / (1000 * 60)
+// document.write("On reference date " + now + " ,<br/>")
+// document.write(dDiff.toFixed() + " seconds had passed since " + now)
+
+
+
+
+
+
+
+
 
 
 
