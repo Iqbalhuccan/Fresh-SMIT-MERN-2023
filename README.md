@@ -1,2 +1,2 @@
 # Iqbal-Hussain-SMIT-MERN-2023
-https://iqbalhussainportfolio.netlify.app/
+https://dazzling-crostata-f199c4.netlify.app/
