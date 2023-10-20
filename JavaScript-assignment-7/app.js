@@ -1,6 +1,6 @@
 
 
-function abc(){
+function abc(e){
     var str = "5+5-";
     var newInput = "";
     var last = str[str.length - 1];

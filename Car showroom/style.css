@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #ffdf00;
+    height: 80px;
+}
+.navbar-brand{
+    font-weight: 1000;
+    color:#0225b2;
+}
+.btn-primary{
+    background-color: #0225b2;
+    border-radius: 40px;
+    padding: 0 30px;
+}
+.form-select{
+    
+}

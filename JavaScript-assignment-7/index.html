@@ -14,7 +14,7 @@
         <div class="calculator">
             <form>
                 <div class="display">
-                    <input type="text" name="display" id="display" class="abc">
+                    <input type="text" name="display" id="display" class= abc()>
                 </div>
                 <div>
                     <input type="button" value="AC" onclick="display.value = ''" class="operator">
@@ -46,9 +46,6 @@
                     <input type="button" value="0" onclick="display.value += '0'">
                     <input type="button" value="=" onClick="display.value = eval(display.value)" class="equal"
                         class="operator">
-                </div>
-                <div>
-                    <input type="button" value="Calculate" onclick="calculate()" class="equal">
                 </div>
             </form>
         </div>
