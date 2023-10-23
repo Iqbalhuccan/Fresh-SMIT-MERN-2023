@@ -38,76 +38,81 @@ var quizArray = [
   {
     id: "3",
     question: "Who is your coding trainer",
-    options: ["Sir Soufyan", "Sir Zain","Sir Ghous", "Sir Isaac Newton"],
-    correct: "Sir Ghous",
+    options: ["Sir Soufyan", "Sir Zain", "Sir Ghous Ahmed", "Sir Isaac Newton"],
+    correct: "Sir Ghous Ahmed",
   },
   {
-    id:"4",
+    id: "4",
     question: "Where is SMIT head campus?",
-    options: ["Gulshan", "Saddar","Johar", "Bahadurabad"],
+    options: ["Gulshan", "Saddar", "Johar", "Bahadurabad"],
     correct: "Bahadurabad",
   }
 ];
 
-//Restart Quiz
-restart.addEventListener("click", () => {
+
+// Restart Quiz
+function handleClick() {
   initial();
   displayContainer.classList.remove("hide");
   scoreContainer.classList.add("hide");
-});
+}
+restart.addEventListener("click", handleClick);
+
 
 //Next Button
-nextBtn.addEventListener(
-  "click",
-  (displayNext = () => {
-    questionCount += 1;
-    if (questionCount == quizArray.length) {
-      displayContainer.classList.add("hide");
-      scoreContainer.classList.remove("hide");
-      userScore.innerHTML =
-        "Your score is " + scoreCount + " out of " + questionCount;
-    } else {
-      countOfQuestion.innerHTML =
-        questionCount + 1 + " of " + quizArray.length + " Question";
-      quizDisplay(questionCount);
-      count = 11;
-      clearInterval(countdown);
-      timerDisplay();
-    }
-  })
-);
+function displayNext() {
+  questionCount += 1;
+  if (questionCount == quizArray.length) {
+    displayContainer.classList.add("hide");
+    scoreContainer.classList.remove("hide");
+    userScore.innerHTML =
+      "Your score is " + scoreCount + " out of " + questionCount;
+  } else {
+    countOfQuestion.innerHTML =
+      questionCount + 1 + " of " + quizArray.length + " Question";
+    quizDisplay(questionCount);
+    count = 11;
+    clearInterval(countdown);
+    timerDisplay();
+  }
+}
+
+nextBtn.addEventListener("click", displayNext);
+
 
 //Timer
-var timerDisplay = () => {
-  countdown = setInterval(() => {
+function timerDisplay() {
+  countdown = setInterval(function () {
     count--;
-    timeLeft.innerHTML = `${count}s`;
+    timeLeft.innerHTML = count + 's';
     if (count == 0) {
       clearInterval(countdown);
       displayNext();
     }
   }, 1000);
-};
+}
+
 
 //Display quiz
-var quizDisplay = (questionCount) => {
-  let quizCards = document.querySelectorAll(".container-mid");
-  quizCards.forEach((card) => {
+function quizDisplay(questionCount) {
+  var quizCards = document.querySelectorAll(".container-mid");
+  quizCards.forEach(function (card) {
     card.classList.add("hide");
   });
   quizCards[questionCount].classList.remove("hide");
-};
+}
+
 
 //Quiz Creation
 function quizCreator() {
   quizArray.sort(() => Math.random() - 0.5);
   for (let i of quizArray) {
     i.options.sort(() => Math.random() - 0.5);
-    let div = document.createElement("div");
+    var div = document.createElement("div");
     div.classList.add("container-mid", "hide");
     countOfQuestion.innerHTML = 1 + " of " + quizArray.length + " Question";
     //question
-    let question_DIV = document.createElement("p");
+    var question_DIV = document.createElement("p");
     question_DIV.classList.add("question");
     question_DIV.innerHTML = i.question;
     div.appendChild(question_DIV);
@@ -122,20 +127,18 @@ function quizCreator() {
   }
 }
 
-//Checker Function to check if option is correct or not
 function checker(userOption) {
   var userSolution = userOption.innerText;
   var question =
     document.getElementsByClassName("container-mid")[questionCount];
   var options = question.querySelectorAll(".option-div");
 
-  //if user clicked answer == correct option stored in object
   if (userSolution === quizArray[questionCount].correct) {
     userOption.classList.add("correct");
     scoreCount++;
   } else {
     userOption.classList.add("incorrect");
-    //For marking the correct option
+
     options.forEach((element) => {
       if (element.innerText == quizArray[questionCount].correct) {
         element.classList.add("correct");
@@ -143,7 +146,8 @@ function checker(userOption) {
     });
   }
   clearInterval(countdown);
-  options.forEach((element) => {
+
+  options.forEach(function (element) {
     element.disabled = true;
   });
 }
@@ -159,14 +163,19 @@ function initial() {
 }
 
 //when user click on start button
-startButton.addEventListener("click", () => {
+function startButtonClicked() {
   startScreen.classList.add("hide");
   displayContainer.classList.remove("hide");
   initial();
-});
+}
+
+startButton.addEventListener("click", startButtonClicked);
+
 
 //hide quiz and display start screen
-window.onload = () => {
+function onLoad() {
   startScreen.classList.remove("hide");
   displayContainer.classList.add("hide");
-};
+}
+
+window.onload = onLoad;
